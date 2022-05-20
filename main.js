@@ -267,6 +267,6 @@ app.post('/search', async (req, res) => {
 /*
 app listening port
  */
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log('Server en: http://127.0.0.1:3000'); //muestra el formulario como home
 });
