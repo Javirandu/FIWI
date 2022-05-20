@@ -1,5 +1,7 @@
 {
-  
+  "scripts": {
+    "start": "node main.js"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "countries-and-timezones": "^3.3.0",
