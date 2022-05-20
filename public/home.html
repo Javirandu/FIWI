@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script async src="/scripts/home_controller.js"></script>
+    <!-- <script async src="/scripts/form_controller.js"></script> -->
+    <script src="https://kit.fontawesome.com/2fa4782a6e.js" crossorigin="anonymous"></script>
+    <title>FIWI</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img id="logo" width="150" height="50" src="static/fiwi.png">
+        </figure>
+        <nav class="navigator">
+            <div id="welcome_back">
+                <div>Welcome back <span id="name_placeholder"></span></div>
+            </div>
+
+            <a href="/logout">Log out</a>
+        </nav>
+    </header>
+    <main class="main">
+        <form id="form" name="search_form">
+            <input type="textarea" id="title" placeholder="Search a title" required>
+            <div class="radio_select">
+                <label for="use_region">Use my region</label>
+                <div class="radio_select_inputs">
+                    <input id="yes" name="use_region" type="radio" value="yes" required>
+                    <!-- required applies to all radio buttons -->
+                    <label for="yes">✔️</label>
+                    <input id="no" name="use_region" type="radio" value="no">
+                    <label for="no">❌</label>
+                </div>
+            </div>
+
+            <div id="advance-search" style="display: none">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="AR">Argentina</option>
+                    <option value="AU">Australia</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BR">Brazil</option>
+                    <option value="CA">Canada</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DE">Germany</option>
+                    <option value="DK">Denmark</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ES">Spain</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GB">Great Britain</option>
+                    <option value="GR">Greece</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HR">Croatia</option>
+                    <option value="HU">Hungary</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IL">Israel</option>
+                    <option value="IN">India</option>
+                    <option value="IS">Iceland</option>
+                    <option value="JP">Japan</option>
+                    <option value="KR">South Korea</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NO">Norway</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="PA">Panama</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Romania</option>
+                    <option value="RS">Serbia</option>
+                    <option value="RU">Russia</option>
+                    <option value="SE">Sweden</option>
+                    <option value="SG">Singapore</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TR">Turkey</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="US">USA</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="ZA">South Africa</option>
+                </select>
+            </div>
+            <button class="form_submit" type="submit" id="myBtn">OK</button>
+        </form>
+    </main>
+    <div class="row">
+        <div id="key-netflix">Netflix</div>
+        <div id="key-amazon">Amazon</div>
+        <div id="key-hbo">HBO</div>
+        <div id="key-disney">Disney+</div>
+    </div>
+    <section id="saved_cards">
+
+
+    </section>
+    <hr>
+    <section id="cards">
+    </section>
+</body>
+
+</html>

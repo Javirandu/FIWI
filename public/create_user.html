@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fa4782a6e.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script async src="/scripts/create_user_controller.js"></script>
+    <title>FIWI</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <a href="/"><img id="logo" width="150" height="50" src="static/fiwi.png"></a>
+        </figure>
+    </header>
+    <main class="main">
+        <form id="form" class="create-form" method="post">
+            <h1 class="create-title">Create user</h1>
+            <div class="create-inputs">
+                <label for="password"><i class='fas fa-user-alt'></i></label>  
+                <input type="name" id="email" placeholder="mail" required>
+            </div>
+            <div class="create-inputs">
+                <label for="password"><i class='fas fa-user-alt'></i></label>  
+                <input type="name" id="username" placeholder="user" required>
+            </div>
+            <div class="create-inputs">
+                <label for="password"><i class="fa-solid fa-key"></i></label>
+                <input type="password" id="password" placeholder="password" required>
+            </div>
+            <div class="create-inputs">
+                <label for="name"><i class="fa-solid fa-pen"></i></label>
+                <input type="name" id="name" placeholder="name" required>
+            </div>
+            <div class="create-buttons">
+                <button class="form_submit" type="submit" id="create-button">Create</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
